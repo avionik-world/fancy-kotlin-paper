@@ -1,7 +1,28 @@
-## Fancy Kotlin Paper 🔩
+# Fancy Kotlin Paper 🔩
 This project is there to simplify some small methods for Kotlin.
 
-#### Kotlin Event-Listener
+## Using the Fancy Kotlin Paper in your plugin
+
+### Maven
+```xml
+<dependencies>
+ <dependency>
+    <groupId>world.avionik</groupId>
+    <artifactId>fancy-kotlin-paper</artifactId>
+    <version>1.0.2</version>
+    <scope>provided</scope>
+  </dependency>
+</dependencies>
+```
+
+### Gradle
+```groovy
+dependencies {
+    compileOnly 'world.avionik:fancy-kotlin-paper:1.0.2'
+}
+```
+
+## Kotlin Event-Listener
 ``` kotlin
 listenEvent<PlayerJoinEvent>(javaPlugin)
     .addCondition { it.player.isOp } //here you can add a condition for this event
@@ -14,7 +35,7 @@ listenEvent<PlayerJoinEvent>(javaPlugin)
 Bukkit.getPluginManager().registerEvents(javaPlugin, PlayerJoinListener(), PlayerQuitListener())
 ```
 
-#### ServicesManager Examples
+## ServicesManager Examples
 ``` kotlin
 //without fancy-kotlin-paper
 servicesManager.register(
@@ -40,7 +61,7 @@ servicesManager.load<TestServiceProvider>()
 ```
 
 
-#### Other Examples
+## Other Examples
 ``` kotlin
 //without fancy-kotlin-paper
 world.createEntity(location, Spider::class.java)
