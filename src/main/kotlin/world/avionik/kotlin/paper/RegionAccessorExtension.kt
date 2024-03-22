@@ -21,3 +21,13 @@ import org.bukkit.entity.Entity
 inline fun <reified T : Entity> RegionAccessor.createEntity(location: Location): T {
     return this.createEntity(location, T::class.java)
 }
+
+/**
+ * Spawn an entity of a specific class at the given {@link Location}
+ *
+ * @param location the {@link Location} to spawn the entity at
+ * @return an instance of the spawned {@link Entity}
+ */
+inline fun <reified T : Entity> RegionAccessor.spawn(location: Location): T {
+    return this.spawn(location, T::class.java)
+}
