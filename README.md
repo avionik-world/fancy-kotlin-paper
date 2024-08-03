@@ -9,7 +9,7 @@ This project is there to simplify some small methods for Kotlin.
  <dependency>
     <groupId>world.avionik</groupId>
     <artifactId>fancy-kotlin-paper</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <scope>provided</scope>
   </dependency>
 </dependencies>
@@ -18,7 +18,7 @@ This project is there to simplify some small methods for Kotlin.
 ### Gradle
 ```groovy
 dependencies {
-    compileOnly 'world.avionik:fancy-kotlin-paper:1.0.2'
+    compileOnly 'world.avionik:fancy-kotlin-paper:1.0.3
 }
 ```
 
