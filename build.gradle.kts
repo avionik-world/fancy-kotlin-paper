@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "world.avionik"
-version = "1.0.3"
+version = "1.0.4"
 
 repositories {
     mavenCentral()
@@ -15,8 +15,8 @@ repositories {
 dependencies {
     compileOnly(kotlin("stdlib"))
 
-    compileOnly("io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT")
-    testCompileOnly("io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT")
+    testCompileOnly("io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT")
 }
 
 signing {
